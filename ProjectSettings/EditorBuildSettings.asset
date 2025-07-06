@@ -20,6 +20,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ResultScene.unity
     guid: 91dce91e9a5984e47a79f3b484ee1e08
+  - enabled: 1
+    path: Assets/Scenes/kari/A.unity
+    guid: 7f1eba088e182d74eab0febc76887fe3
+  - enabled: 1
+    path: Assets/Scenes/kari/B.unity
+    guid: ece66538b291ce14182b20d516d0bae0
+  - enabled: 1
+    path: Assets/Scenes/kari/C.unity
+    guid: 6e5f8eb4f0e53394994fb744599b0039
+  - enabled: 1
+    path: Assets/Scenes/kari/D.unity
+    guid: 5f9c6c406690aab49a6f2f5a394cdbf9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
