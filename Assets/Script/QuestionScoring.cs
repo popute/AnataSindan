@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class QuestionScoring : MonoBehaviour
 {
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     // 各タイプのスコア管理（A/B/C/D）
     private Dictionary<char, int> typeScores = new Dictionary<char, int>
     {
@@ -85,5 +90,13 @@ public class QuestionScoring : MonoBehaviour
         }
         return result;
     }
+
+    public void ResetScores()
+{
+    typeScores['A'] = 0;
+    typeScores['B'] = 0;
+    typeScores['C'] = 0;
+    typeScores['D'] = 0;
+}
 
 }

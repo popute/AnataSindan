@@ -21,6 +21,13 @@ public class QuestionMove : MonoBehaviour
 
     void Start()
     {
+        // もし前回のスコアが残っているならリセット
+        scoring = FindObjectOfType<QuestionScoring>();
+        if (scoring != null)
+        {
+            scoring.ResetScores();
+        }
+
         ShowQuestion();
     }
 
@@ -34,16 +41,13 @@ public class QuestionMove : MonoBehaviour
         {
             // 質問が終わったら次のSceneに移動など
             Debug.Log("質問終了");
-            char resultType = scoring.GetResultType(); // A〜Dを取得
+           /* char resultType = scoring.GetResultType(); // A〜Dを取得
 
         string sceneName = resultType.ToString(); // 'A' → "A" など
 
         Debug.Log($"結果タイプ: {resultType}, 遷移先Scene: {sceneName}");
-
-        SceneManager.LoadScene(sceneName);
-        
-
-        SceneManager.LoadScene(sceneName);
+*/
+        SceneManager.LoadScene("ResultScene");
         }
     }
 
